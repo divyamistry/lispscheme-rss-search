@@ -1,0 +1,49 @@
+/**********************
+SchemeRSS allows a search for local rss/xml files
+
+Author: Divya Mistry
+For CSI3331.01 Fall 2007
+Due: 12-2-2007
+
+**********************/
+
+List of file(s):
+SchemeRSS.ss    ;;file contains all the methods necessary to run the program
+
+
+Overall Design:
+There are 4 critical functions
+processFiles         ;; reads the main rss.txt file and figures out the feed file names
+ |
+ |--> processFeeds   ;; take a feed file and processes each item
+        |
+        |--> getAll  ;; gets an item from a feed, and stores title and 
+        |            ;;    link separately while processing the description for words
+        |
+        |--> procDesc ;;given a description, processes it to get individual words and stores in hash table
+
+;; For more details on what each of the function does and how it works, you may look at my comments
+;;    I think my comments will make sense
+
+Assumptions:
+I have made a few assumptions for this version of the implementation. I assume that a search term is valid only if its length is greater than 2 (at least 3 characters). I also assume that a search term that appears more than 30 times is too common (this is a constant number, so it can be changed any time).
+
+Future Improvements:
+In future versions of this program, I would like to take away both the restrictions due to my assumptions. I would like to create a list of common phrases (this, that, is, where, etc.) which is looked up before every insertion. I would like to create a file-selector (browse file dialog box) instead of giving the source file name at the command prompt.
+
+
+
+Compiling the program: (No need to compile :))
+
+How to use this program:
+->Open SchemeRSS.ss in DrScheme
+->Once the file has loaded, Click on "Run"
+->at the prompt, type the path to your rss.txt main rss file
+  -> the program will prompt you for search words. The prompts are easy to follow from there on.
+
+Thanks.
+
+For further information contact:
+Divya_Mistry@baylor.edu
+http://divyamistry.com/
+
