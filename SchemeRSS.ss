@@ -1,6 +1,4 @@
 ;; Author: Divya Mistry
-;;         CSI 3331.01 Fall 2007
-;; Exam 2 Part 2
 ;; Scheme implementation of the RSS Aggregator
 
 ;; required libraries for processing files and data
