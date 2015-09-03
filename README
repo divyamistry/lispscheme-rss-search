@@ -2,10 +2,9 @@
 SchemeRSS allows a search for local rss/xml files
 
 Author: Divya Mistry
-For CSI3331.01 Fall 2007
-Due: 12-2-2007
-
 **********************/
+
+This was originally written for Michael Aars' Survey of Programming Languages course. The code has been modified with some bug fixes. There is also a corresponding C++ set of source available.
 
 List of file(s):
 SchemeRSS.ss    ;;file contains all the methods necessary to run the program
@@ -42,8 +41,3 @@ How to use this program:
   -> the program will prompt you for search words. The prompts are easy to follow from there on.
 
 Thanks.
-
-For further information contact:
-*inactive baylor email address*
-http://divyamistry.com/
-
